@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f5ef" />
+  <title>BookSwap Mart — Good books, second lives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">A good book deserves another read <strong>· Shipping across India</strong></div>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="BookSwap Mart home"><span class="brand-mark">▤</span><span class="brand-name">BookSwap <span>Mart</span></span></a>
+      <nav><a href="#browse">Browse books</a><a href="#how-it-works">How it works</a><a href="#impact">Our impact</a></nav>
+      <div class="actions"><button class="icon-btn" aria-label="Shopping cart" id="cartButton">▱<span class="cart-count" id="cartCount">0</span></button><button class="sell-link" id="sellButton">Sell a book <span aria-hidden="true">↗</span></button></div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div><div class="eyebrow">The marketplace for well-loved books</div><h1>Good books.<br><em>Second lives.</em></h1><p class="hero-copy">Find your next favorite for less. Give the books you’ve loved a new home, and keep great stories moving.</p>
+          <form class="search" id="searchForm"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="searchInput" placeholder="Search by title, author, or ISBN" aria-label="Search books"><button type="submit">Find a book</button></form>
+          <div class="hero-note"><span><b>✓</b> Carefully checked</span><span><b>↻</b> Books find new readers</span><span><b>♡</b> Prices worth turning pages for</span></div>
+        </div>
+        <div class="hero-art" aria-label="A stack of books illustration"><div class="art-backdrop"></div><div class="sun"></div><div class="book-stack"><div class="book one">THE<br>GARDEN<br>OF IDEAS</div><div class="book two">A LIFE<br>IN<br>LETTERS</div><div class="book three">WILD<br>PLACES</div></div><div class="floating-note note-a"><span class="note-icon">↻</span><span><strong>3,248 books re-loved</strong><small>Stories keep on going</small></span></div><div class="floating-note note-b"><span class="note-icon">✦</span><span><strong>Save up to 15%</strong><small>On every good read</small></span></div></div>
+      </section>
+      <section id="browse">
+        <div class="section-head"><div><div class="eyebrow">A little something for every reader</div><h2>Find your next chapter</h2><p>Explore the shelves, then follow a story wherever it takes you.</p></div><a class="text-link" href="#books">View all books&nbsp; →</a></div>
+        <div class="categories" id="categories">
+          <button class="category active" data-category="All"><span class="emoji">📚</span><b>All books</b><small>Explore everything</small></button><button class="category" data-category="Fiction"><span class="emoji">🌿</span><b>Fiction</b><small>Worlds to get lost in</small></button><button class="category" data-category="Non-fiction"><span class="emoji">🔎</span><b>Non-fiction</b><small>Ideas worth sharing</small></button><button class="category" data-category="Children"><span class="emoji">🦊</span><b>Kids & young adult</b><small>Little big adventures</small></button><button class="category" data-category="Science"><span class="emoji">☄️</span><b>Science & nature</b><small>Wonder, explained</small></button><button class="category" data-category="Classics"><span class="emoji">🕰️</span><b>Classics</b><small>Stories that stay</small></button>
+        </div>
+      </section>
+      <section class="books-section" id="books"><div class="section-head"><div><div class="eyebrow">Fresh from the bookshelf</div><h2>Readers are loving these</h2><p>Pre-loved, page-turning, and priced to pass along.</p></div><a class="text-link" href="#books" id="clearFilter">Clear filters&nbsp; ×</a></div><div class="book-grid" id="bookGrid"></div></section>
+      <section class="impact" id="impact"><div class="impact-copy"><div class="eyebrow">A small swap, a lighter footprint</div><h2>Every book deserves another chapter.</h2><p>When you choose pre-loved, you save more than money. You help keep good stories in circulation and make room for the next reader.</p><div class="impact-stats"><div><strong>3,248</strong><small>books re-loved</small></div><div><strong>1.6 tons</strong><small>paper kept in use</small></div><div><strong>4.9/5</strong><small>reader happiness</small></div></div></div><div class="impact-art"><span class="leaf">🌱</span></div></section>
+    </main>
+    <footer class="footer" id="how-it-works"><a class="brand" href="#top"><span class="brand-mark">▤</span><span class="brand-name">BookSwap <span>Mart</span></span></a><span>Pass a good story on. © 2026 BookSwap Mart</span><span>Good books, lower prices, happier shelves.</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
